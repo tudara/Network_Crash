@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7081751903358389361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6260305056289330190}
+  - component: {fileID: 6941732758684076373}
+  - component: {fileID: 3496264655570272386}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6260305056289330190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7081751903358389361}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.4, y: 0.5047, z: 0}
+  m_LocalScale: {x: 2, y: 20.02, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6941732758684076373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7081751903358389361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53088f64de9ae46ec83324fff0f8a1c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalHackers: 3
+  firewall: {fileID: 0}
+  pauseMenuUI: {fileID: 0}
+  player: {fileID: 3378401314529871494, guid: a8eef05dd414d4f01a845026774c8cdc, type: 3}
+  pauseSound: {fileID: 8300000, guid: b6e2ca59e391e4fd3a9bc5b29537257d, type: 3}
+  hackerSound: {fileID: 8300000, guid: a8cb337924c664c248ffc6b1b8f7850b, type: 3}
+  finishSound: {fileID: 8300000, guid: bf16e522c23d847969f65bb1dc3d9125, type: 3}
+  resumeSound: {fileID: 8300000, guid: 4debe8d54f58d483a9d2eb28612b7197, type: 3}
+  exitSound: {fileID: 8300000, guid: 22839c240ed6c473d923b746fbd24118, type: 3}
+  mainMenuSound: {fileID: 8300000, guid: 4debe8d54f58d483a9d2eb28612b7197, type: 3}
+--- !u!114 &3496264655570272386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7081751903358389361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a67571e4aa549a39708ed50bda097d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
+  scoreText: {fileID: 0}
+  currentScoreText: {fileID: 0}
+  highScoreText: {fileID: 0}
+  scoreDisplayDuration: 5
+  timeWeight: 3000
+  hackerPenalty: 200
+  deathPenalty: 300
+  sceneToLoad: Level_2
